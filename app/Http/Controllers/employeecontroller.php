@@ -12,7 +12,7 @@ class employeecontroller extends Controller
     {   
         $employees = employee::get();
 
-        return view ('employee.index');
+        return view ('employee.index',compact('employees'));
     }
 
     public function store(Request $request){
