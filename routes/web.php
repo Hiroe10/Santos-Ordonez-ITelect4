@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 
-    Route::get('employee/[$id]/edit', [\App\Http\Controllers\employeecontroller::class, 'edit'])->name('employee.edit');
-    Route::put('employee/[$id]/update', [\App\Http\Controllers\employeecontroller::class, 'update'])->name('employee.update');
-    Route::get('employee/[$id]/delete', [\App\Http\Controllers\employeecontroller::class, 'destroy'])->name('employee.delete');
+    Route::get('employee/$id/edit', [\App\Http\Controllers\employeecontroller::class, 'edit'])->name('employee.edit');
+    Route::put('employee/$id/update', [\App\Http\Controllers\employeecontroller::class, 'update'])->name('employee.update');
+    Route::get('employee/$id/delete', [\App\Http\Controllers\employeecontroller::class, 'destroy'])->name('employee.delete');
 });
